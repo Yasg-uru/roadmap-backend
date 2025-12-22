@@ -36,7 +36,7 @@ const server = http.createServer(app);
 
 export const io = new SocketIOServer(server, {
   cors: {
-    origin: ["http://localhost:5173"],
+    origin: ["http://localhost:5173", "https://roadmap-website-frontend-5xdx.vercel.app"],
     credentials: true,
   },
 });
@@ -62,7 +62,7 @@ io.on("connection", (socket) => {
 
 app.use(
   cors({
-    origin: ["http://localhost:5173"],
+    origin: ["http://localhost:5173", "https://roadmap-website-frontend-5xdx.vercel.app"],
     credentials: true,
   })
 );
