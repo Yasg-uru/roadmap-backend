@@ -169,6 +169,13 @@ OPENAI_API_KEY=sk-...
 PORT=8000
 ```
 
+### Deployment notes (Render)
+
+- Ensure the **Build Command** is `npm run build` and the **Start Command** is `npm start` (or `node dist/index.js`).
+- Render may run `node index.js` by default — that will fail because the TypeScript source is in `src/` and the compiled entry is `dist/index.js`.
+- To auto-build after `npm install`, a `postinstall` script is included that runs `npm run build`.
+- Do NOT commit your `.env` with secrets to the repo; use Render's environment variables in the dashboard.
+
 ### Adjust Thresholds
 Edit `src/services/generateroadmap_service.ts`:
 
