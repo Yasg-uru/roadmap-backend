@@ -15,6 +15,7 @@ import resourceBookmarkRoutes from "./route/resourceBookmarkRoutes";
 import recentlyViewedRoutes from './route/recentlyViewedRoutes';
 import notificationRoutes from "./route/notificationRoute";
 import resourceRoutes from './route/resourceRoutes';
+
 import reviewRoutes from './route/reviewRoutes';
 import resourceReviewRoutes from './route/resourceReviewRoutes';
 import roadmapnodeRoutes from "./route/roadmapnodeRoute";
